@@ -15,16 +15,26 @@
 	<img src="https://img.shields.io/badge/React-61DAFB.svg?style=flat&logo=React&logoColor=black" alt="React">
 	<img src="https://img.shields.io/badge/JSON-000000.svg?style=flat&logo=JSON&logoColor=white" alt="JSON">
 </p>
+<p>This a Movie App that contains a register page and a page of a list of movies and it can add a favorite movie to the favorites page.</p>
 <hr>
 
 ##  Getting start
+1. Create the movieapp database in phpmyadmin containing these followinf tables:
+   
+```sh
+favorites -> columns: id/user_id/movie_id/title/poster_path/release_date/status 
+```
+```sh
+users -> columns: id/name/email/password/phone/created_at/ 
+```
+ps:id should be auto incremented.
 
-1. Clone the FirebaseUploadImage repository:
+2. Clone the FirebaseUploadImage repository:
 
 ```sh
 git clone https://github.com/Mariat2001/movie_app
 ```
-2. Change to the project directory:
+3. Change to the project directory:
 
 ```sh
 cd movie_app
@@ -33,6 +43,10 @@ cd movie_app
   
 1. In the Movie_App run this the Frontend Folder following these steps:
 
+```sh
+1. Navigate to the frontend folder:
+   cd Frontend_app
+```
 ```sh
 1. Install dependencies:
     npm install
@@ -43,64 +57,44 @@ cd movie_app
 ```
 
   B-***Backend Setup***
+1. In the Movie_App run this the Frontend Folder following these steps:
 
 ```sh
-1.npm install
+1. Navigate to the backend folder:
+   cd Backend_app
 ```
 
 ```sh
-2. Create a New Project
+2. Express: For creating the server and handling HTTP requests:
+   npm install express
 ```
 
 ```sh
-3. Set Up Authentication
-.In the Firebase Console, navigate to "Authentication" in the left sidebar.
-.Under "Sign-in method" tab, enable the "Email/Password" sign-in method.
+3. MySQL: For connecting to and interacting with a MySQL database:
+  npm install mysql
 ```
 
 ```sh
-4. Configure Storage Rules
-.Go to "Storage" in the Firebase Console.
-.Choose "Production" mode .
-.Replace the existing rules with the following:
- service firebase.storage {
-  match /b/{bucket}/o {
-    // Allow read and write access to the user's own files
-    match /users/{userId}/{allPaths=**} {
-      allow read, write: if request.auth != null && request.auth.uid == userId;
-    }
-  }
-}
-
+4. CORS: Allows the frontend to communicate with the backend:
+   npm install cors
 ```
 
 ```sh
-5. Setup Firebase in Your Project
-.Go to "Project settings" (gear icon) in the Firebase Console.
-.Under "Your apps" section, click on "</>" to add a new app platform.
-.Choose the appropriate platform (e.g., Web) and give your app a nickname.
-.Follow the setup instructions, which typically involve adding Firebase SDK to your project.
+5. Bcrypt: For hashing passwords securely:
+    npm install bcrypt
 ```
 
 ```sh
-6. Install Firebase SDK
-In your project's terminal, run the following command to install Firebase SDK using npm:
-    npm install firebase
-
+6. dotenv: To manage environment variables securely (JWT secrets):
+   npm install dotenv
 ```
 
 ```sh
-7. Configure Firebase in Your Code
-Replace the Firebase configuration in your project with the provided firebaseConfig object:
-javascript
-Copy code
-const firebaseConfig = {
-  apiKey: "<your-api-key>",
-  authDomain: "<your-auth-domain>",
-  projectId: "<your-project-id>",
-  storageBucket: "<your-storage-bucket>",
-  messagingSenderId: "<your-messaging-sender-id>",
-  appId: "<your-app-id>",
-  measurementId: "<your-measurement-id>"
-}
+7. jsonwebtoken: For generating and verifying JSON Web Tokens (JWT) for authentication:
+   npm install jsonwebtoken
+```
+
+```sh
+8. Nodemon: Automatically restarts the server when code changes are detected:
+  npm install --save-dev nodemon
 ```
