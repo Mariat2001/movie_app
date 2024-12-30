@@ -22,21 +22,21 @@
 1. Clone the FirebaseUploadImage repository:
 
 ```sh
-git clone https://github.com/Mariat2001/FirebaseUploadImage
+git clone https://github.com/Mariat2001/movie_app
 ```
 2. Change to the project directory:
 
 ```sh
-cd FirebaseUploadImage
+cd movie_app
 ```
-  A-***React Setup***
+  A-***Frontend Setup***
   
 1. Install the dependencies:
 
 ```sh
 npm install
 ```
-  B-***Firebase Setup***
+  B-***Backend Setup***
 
 ```sh
 1.npm install
