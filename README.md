@@ -31,11 +31,17 @@ cd movie_app
 ```
   A-***Frontend Setup***
   
-1. Install the dependencies:
+1. In the Movie_App run this the Frontend Folder following these steps:
 
 ```sh
-npm install
+1. Install dependencies:
+    npm install
 ```
+```sh
+2. Run the development server:
+    npm run dev
+```
+
   B-***Backend Setup***
 
 ```sh
