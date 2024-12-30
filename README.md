@@ -13,7 +13,10 @@
 	<img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&logo=JavaScript&logoColor=black" alt="JavaScript">
 	<img src="https://img.shields.io/badge/HTML5-E34F26.svg?style=flat&logo=HTML5&logoColor=white" alt="HTML5">
 	<img src="https://img.shields.io/badge/React-61DAFB.svg?style=flat&logo=React&logoColor=black" alt="React">
-	<img src="https://img.shields.io/badge/JSON-000000.svg?style=flat&logo=JSON&logoColor=white" alt="JSON">
+	<img src="https://img.shields.io/badge/Express.js-404D59.svg?style=flat&logo=express&logoColor=white" alt="Express.js">
+        <img src="https://img.shields.io/badge/CSS3-1572B6.svg?style=flat&logo=CSS3&logoColor=white" alt="CSS3">
+
+
 </p>
 <p>This a Movie App that contains a register page and a page of a list of movies and it can add a favorite movie to the favorites page.</p>
 <hr>
