@@ -32,7 +32,7 @@ users -> columns: id/name/email/password/phone/created_at/
 ```
 ps:id should be auto incremented.
 
-2. Clone the FirebaseUploadImage repository:
+2. Clone the movie_app repository:
 
 ```sh
 git clone https://github.com/Mariat2001/movie_app
