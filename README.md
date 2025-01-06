@@ -60,7 +60,7 @@ cd movie_app
 ```
 
   B-***Backend Setup***
-1. In the Movie_App run this the Frontend Folder following these steps:
+1. In the Movie_App run this the Backend Folder following these steps:
 
 ```sh
 1. Navigate to the backend folder:
